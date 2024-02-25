@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.main{
+    margin-top: 60px;
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(163, 219, 254);
+display: flex;
+/* align-items: center; */
+gap: 40px;
+flex-wrap: wrap;
+padding: 30px 20px;
+
+}
+.nav{
+    width: 100%;
+    height: 60px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+    background: rgb(104, 207, 202);
+    position: fixed;
+    top: 0;
+    color: white;
+}
+.addBtn{
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: all ease .3s;
+
+}
+.addBtn:active{
+    cursor: pointer;
+    scale: .96;
+}
+.note{
+    width: 330px;
+    height: 400px;
+    background: white;
+
+}
+.toolbar{
+    width: 100%;
+    height: 40px;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding-right:20px ;
+}
+.toolbar i{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.toolbar i:hover{
+    color: aquamarine;
+}
+
+.toolbar i:nth-child(2):hover{
+    color: red;
+}
+.text{
+    width: 100%;
+    height: calc(100% - 40px);
+    overflow: hidden;
+}
+.text textarea{
+    width: 100%;
+    height: 100%;
+    resize:none;
+    border: 0;
+    padding: 10px;
+font-size: 18px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text textarea:focus{
+    border: 0;
+    outline: 0;
+}
